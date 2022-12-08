@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Metoda Greedy</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Metoda Greedy</h1>
+        </div>
+        <div id="content">
+            <div id="navigare">
+                <ul>
+                    <li><a href="../index.html">Pagina principală</a> </li><br>
+                    <li> <a href="trierii.html">Metoda trierii</a> </li><br>
+                    <li> <a href="greedy.html">Greedy</a> </li><br>
+                    <li> <a href="backtracking.html">Backtracking</a> </li><br>
+                </ul>
+            </div>
+            <div id="main">
+
+                <h1>Definiție:</h1>
+                <h2>
+                    Se numeşte metoda trierii o metodă ce indentifică toate soluţiile unei probleme în dependenţă de
+                    mulţimea soluţiilor posibile.</h2>
+                Tehnica Greedy se aplică problemelor de optimizare, ea constă în faptul că se construieşte
+                soluția optimă pas cu pas. La fiecare pas, fiind selectat în soluție, elementul care pare „cel mai bun/
+                cel mai optim” la momentul respectiv, în speranța că această alegere locală va conduce la optimul
+                global. Tehnica Greedy se aplică problemelor pentru care se dă o mulţime A cu
+                n elemente şi pentru care trebuie determinată o submulţime a sa, S cu m elemente, care îndeplinesc
+                anumite condiţii, numite și condiții de optim.
+
+                <h2>Algoritm Greedy:</h2>
+                <ul>
+                    <li>se dă o mulţime A;</li>
+                    <li>se cere o submulţime S din multimea A care sa:</li>
+                    <ol>
+                        <li>să îndeplinească anumite condiţii interne (să fie acceptabilă);</li>
+                        <li> să fie optimală (să realizeze un maxim sau un minim).
+                    </ol>
+                </ul>
+                <h2>Principiul metodei Greedy:</h2>
+                1. se iniţializează mulţimea soluţiilor S cu mulţimea vidă, S=Ø;<br>
+                2. la fiecare pas se alege un anumit element x∈A (cel mai promiţător element la momentul
+                respectiv) care poate conduce la o soluţie optimă;<br>
+                3. se verifică dacă elementul ales poate fi adăugat la mulţimea soluţiilor:<br>
+                4. dacă da, atunci va fi adăugat şi mulţimea soluţiilor devine S=S∪{x} - un element introdus
+                în mulţimea S nu va mai putea fi eliminat;<br>
+                5. altfel, el nu se mai testează ulterior, procedeul continuă, până când au fost determinate
+                toate elementele din mulţimea soluţiilor.<br>
+
+            </div>
+        </div>
+
+        <div id="problema">
+            <h1>Problemă rezolvată:<br></h1>
+            Un robot poate face orice comandă de meniu într-o oră. Este dată o listă cu prețul
+            fiecărei comenzi și ora la care aceasta trebuie să fie gata. Se cere de determinat
+            orele la care trebuie efectuată fiecare comandă, pentru a primi un venit maxim.
+            <br><br>
+            <img width=450px src="../imagini/greedy problema.png"> <br> <br>
+
+
+        </div>
+
+        <div id="subsol">
+            <img width=100% src="../imagini/c++.jpg">
+        </div>
+    </div>
+</body>
+
+</html>

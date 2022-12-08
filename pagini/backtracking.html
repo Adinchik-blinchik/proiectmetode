@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Metoda backtracking</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Metoda backtracking</h1>
+        </div>
+        <div id="content">
+            <div id="navigare">
+                <ul>
+                    <li><a href="../index.html">Pagina principală</a> </li><br>
+                    <li> <a href="trierii.html">Metoda trierii</a> </li><br>
+                    <li> <a href="greedy.html">Greedy</a> </li><br>
+                    <li> <a href="backtracking.html">Backtracking</a> </li><br>
+                </ul>
+            </div>
+            <div id="main">
+                
+                    <h1>Definiție:</h1>
+                    <h2>
+                        Backtracking este un algoritm general pentru a găsi toate (sau unele) soluții la unele probleme de
+                        calcul, în special probleme de satisfacție de constrângere, care crește gradual candidații la soluții și
+                        abandonează un candidat („backtracks”) imediat ce stabilește că acest candidat nu poate fi completat
+                        cu o soluție valabilă </h2>
+                <br><br><font size="5"> Metoda backtracking mai poate fi întâlnită în unele resurse ca metoda reluării.
+                 Există trei tipuri de probleme în baza metodei backtracking:<br></font><br>
+                1. Problema deciziei - în această situație, căutăm o soluție fezabilă.<br>
+                2. Problema de optimizare - în această situație, căutăm cea mai bună soluție.<br>
+                3. Problema de enumerare - în această situație, găsim toate soluțiile fezabile.<br>
+                <br><br> Termenul "backtrack" a fost creat de matematicianul american D. H. Lehmer în anii '50.
+                Limbajul pionier de prelucrare a șirurilor SNOBOL (1962) ar fi fost primul care a
+                furnizat o instalație de backtracking generală.
+                <hr><br><br><br>
+                Pentru o mai bună înțelegere, ne putem imagina un ceas electronic care afișează trei valori: ora, minutul, secunda.
+Pe parcursul unei zile ora parcurge o singură dată intervalul de valori posibile. Noi ne imaginăm ora ca fiind
+valoarea de la nivelul pas 1, adică x[1]. Minutul (pas 2) își variază toate valorile posibile nu doar o dată, ci
+pntru fiecare oră diferită, iar secunda (pas 3) și mai des, pentru fiecare combinație posibilă oră, minut.
+Cam așa funcționează și funcția recursivă prezentată mai sus.
+
+            </div>
+        </div>
+        
+        <div id="problema">
+            <h1>Problemă rezolvată: <br></h1>
+Se cere de afișat la ecran toate aranjamentele posibile din numere de la 1 până la N, 
+luate câte k: <br><br>
+<img width="400px" src="../imagini/backtracking problema.png"><br><br>
+        În primul rând, am creat un tablou unidimensional pentru a 
+        plasa în el fiecare aranjament în parte. Începând cu poziția unu, 
+        am completat-o pe fiecare cu câte o valoare de la 1 la N. Atunci când 
+        toate cele K poziții erau deja completate, schimbam ultimul element, pentru 
+        a obține un aranjament nou. <br> <br>
+
+        </div>
+        
+        
+        
+        <div id="footer">
+            <img width=100% src="../imagini/c++.jpg">
+        </div>
+    </div>
+</body>
+
+</html>
